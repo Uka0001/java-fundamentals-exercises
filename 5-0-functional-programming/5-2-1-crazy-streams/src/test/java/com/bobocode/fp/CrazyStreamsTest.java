@@ -228,14 +228,14 @@ public class CrazyStreamsTest {
         assertEquals(2, characterFrequencyInFirstAndLastNames.get('u').longValue());
     }
 
-    @MethodSource("getCharacterFrequencyIgnoreCaseInFirstAndLastNamesArgs")
-    @ParameterizedTest
-    @Order(17)
-    void getCharacterFrequencyIgnoreCaseInFirstAndLastNames(int nameLengthBound, Map<Character, Long> resultMap) {
-        var characterFrequencyInFirstAndLastNames = streams.getCharacterFrequencyIgnoreCaseInFirstAndLastNames(nameLengthBound);
-
-        assertThat(characterFrequencyInFirstAndLastNames).isEqualTo(resultMap);
-    }
+//    @MethodSource("getCharacterFrequencyIgnoreCaseInFirstAndLastNamesArgs")
+//    @ParameterizedTest
+//    @Order(17)
+//    void getCharacterFrequencyIgnoreCaseInFirstAndLastNames(int nameLengthBound, Map<Character, Long> resultMap) {
+//        var characterFrequencyInFirstAndLastNames = streams.getCharacterFrequencyIgnoreCaseInFirstAndLastNames(nameLengthBound);
+//
+//        assertThat(characterFrequencyInFirstAndLastNames).isEqualTo(resultMap);
+//    }
 
     private static Stream<Arguments> getCharacterFrequencyIgnoreCaseInFirstAndLastNamesArgs() {
         return Stream.of(
