@@ -22,8 +22,8 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class ExerciseIntroductionTest {
-    private ExerciseIntroduction exerciseIntroduction = new ExerciseIntroduction();
-    private String EXPECTED_MESSAGE = "The key to efficient learning is practice!";
+    private final ExerciseIntroduction exerciseIntroduction = new ExerciseIntroduction();
+    private final String EXPECTED_MESSAGE = "The key to efficient learning is practice!";
 
     @Test
     @Order(1)
